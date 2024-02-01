@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import MobileMenu from "@/components/Header/mobileMenu";
 import MobileMenuLogo from "@/components/Header/mobileMenuLogo";
-import Slider from "@/components/slider";
+import Banner from "@/components/banner";
 import CTA from "@/components/cta";
 import Features from "@/components/features";
 import About from "@/components/about";
@@ -11,10 +11,6 @@ import Service2 from "@/components/service2";
 import SeeMore from "@/components/seeMore";
 import AboutChooseArea from "@/components/aboutChooseArea";
 import RecentProjects from "@/components/recentProjects";
-import TeamArea from "@/components/teamArea";
-import CallArea from "@/components/callArea";
-import Testimonial from "@/components/testimonial";
-import VisionArea from "@/components/visionArea";
 import BlogArea from "@/components/blogArea";
 import BrandArea from "@/components/brandArea";
 import Footer from "@/components/footer";
@@ -58,7 +54,7 @@ export default function Home() {
           <MobileMenu />
         </>
       )}
-      {settingsStatus?.Banner && <Slider />}
+      {settingsStatus?.Banner && <Banner />}
       {settingsStatus?.CTA && <CTA />}
       {settingsStatus?.Features && <Features />}
       {settingsStatus?.Service && <Service />}
